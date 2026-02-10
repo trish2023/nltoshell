@@ -1,0 +1,40 @@
+# Secrets - NEVER push API keys
+.env
+*.env
+
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# SQLite databases (generated at runtime)
+*.db
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Test files (not part of core project)
+hello.txt
+text.txt
+flowtest.py
+aibrain.py
+testexec.py
+testinput.py
+mongotest.py
+
+# Old duplicate at root level (package version is in aishell/)
+/mongo_utils.py

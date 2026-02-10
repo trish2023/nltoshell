@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aishell"
+version = "1.0.0"
+description = "AI Shell — Natural Language to PowerShell Command Generator"
+readme = "README.txt"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai",
+    "python-dotenv",
+    "pymongo",
+    "rich",
+]
+
+[project.scripts]
+aishell = "aishell.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+aishell = [".env", "*.db"]
