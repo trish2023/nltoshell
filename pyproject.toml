@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "aishell"
 version = "1.0.0"
 description = "AI Shell — Natural Language to PowerShell Command Generator"
-readme = "README.txt"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "google-genai",
