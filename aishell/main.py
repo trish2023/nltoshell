@@ -6,8 +6,6 @@ import re
 from google import genai
 from dotenv import load_dotenv
 from datetime import datetime
-
-# Rich Library - Custom Terminal UI
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
@@ -20,12 +18,10 @@ from rich.spinner import Spinner
 from rich.padding import Padding
 from rich import box
 
-# Load .env from the same directory as this script
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 env_path = os.path.join(SCRIPT_DIR, '.env')
 load_dotenv(env_path)
 
-# Import SQLite database utilities (validation, rules)
 from .db_utils import (
     validate_command,
     log_command_history,
@@ -36,8 +32,6 @@ from .db_utils import (
     get_active_shell
 )
 from .db_setup import initialize_database, DB_PATH
-
-# Import MongoDB utilities (logging, session tracking)
 from .mongo_utils import (
     initialize_mongodb,
     close_mongodb,
